@@ -1,14 +1,17 @@
 {
     "layer": "top",
     "position": "top",
-    "margin": 5,
+    "margin-top": 5,
+    "margin-left": 5,
+    "margin-bottom": 0,
+    "margin-right": 5,
+    "spacing": 0,
 
-    // If height property would be not present, it'd be calculated dynamically
     "height": 36,
 
     "modules-left": [
         // "custom/launcher",
-        "wlr/workspaces",
+        "hyprland/workspaces",
         "custom/media",
         "hyprland/window",
     ],
@@ -113,17 +116,13 @@
         "max-length": 120
     },
 
-    "wlr/workspaces": {
-        "disable-scroll": true,
-        "disable-markup" : false,
+    "hyprland/workspaces": {
         "all-outputs": true,
-        "format": "  {icon}  ",
-        //"format":"{icon}",
+        "format": "{icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "󰙯",
-            "4": "",
+            "default": "",
+            "urgent": "",
+            "active": "",
         }
     },
 
@@ -160,8 +159,8 @@
     },
 
     "tray": {
-        "icon-size": 18,
-        "spacing":10,
+        "icon-size": 20,
+        "spacing": 8,
      },
 
 

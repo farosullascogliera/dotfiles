@@ -1,18 +1,3 @@
-/* =============================================================================
- *
- * Waybar configuration
- *
- * Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
- *
- * =========================================================================== */
-
-/* -----------------------------------------------------------------------------
- * Keyframes
- * -------------------------------------------------------------------------- */
-
-/*
-Arc-Dark Color Scheme
-*/
 @keyframes blink-warning {
     70% {
         color: white;
@@ -35,9 +20,6 @@ Arc-Dark Color Scheme
     }
 }
 
-/* -----------------------------------------------------------------------------
- * Base styles
- * -------------------------------------------------------------------------- */
 
 /* Reset all styles */
 * {
@@ -50,15 +32,10 @@ Arc-Dark Color Scheme
 }
 
 
-/* The whole bar */
 window#waybar {
-    /* color: #dfdfdf; */
-    /* background-color: rgba(0,0,0,0.8); */
-    /* background-color: rgba(8,0,37,0.85); */
     background-color: rgba(0,0,0,0);
     font-family: JetBrains Mono Nerd Font;
     font-size: 14px;
-    /* border-radius: 22px; */
 }
 
 /* Every modules */
@@ -81,7 +58,7 @@ window#waybar {
 #custom-PBPbattery {
     padding:0.25rem 0.75rem;
     margin: 1px 6px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(29,26,33,0.8);
     border-radius: 20px;
 }
 
@@ -90,7 +67,6 @@ window#waybar {
  * -------------------------------------------------------------------------- */
 
 #clock {
-    /* color: #ff4499; */
     color: #73daca;
 }
 
@@ -150,8 +126,6 @@ window#waybar {
 }
 
 #mode {
-    /* background: @highlight; */
-    /* background: #dfdfdf; */
     border-bottom: 3px transparent;
     color:#ff4499;
     margin-left: 5px;
@@ -170,10 +144,6 @@ window#waybar {
     border-radius: 20px 0 0 20px;
 }
 
-/* #pulseaudio.muted { */
-/*     color: #ff4499; */
-/* } */
-/**/
 #pulseaudio.microphone {
     border-left: 0px;
     border-right: 0px;
@@ -181,11 +151,6 @@ window#waybar {
     padding-left: 0;
     border-radius: 0 20px 20px 0;
 }
-
-/* #pulseaudio.microphone.muted { */
-/*     color: #ff4499; */
-/* } */
-
 
 #temperature.critical {
     color: red;
@@ -206,21 +171,34 @@ window#waybar {
     border-radius: 20px;
 }
 
-#workspaces button {
-    border-bottom: 3px solid transparent;
-    margin-bottom: 0px;
-    color: #dfdfdf;
+#workspaces button:nth-child(1) label {
+  color: #8aadf4;
+  margin: 0px 8px;
 }
 
-#workspaces button.active {
-    border-bottom: 1px solid  #ff4499;
-    margin-bottom: 1px;
-    padding-left:0;
+#workspaces button:nth-child(2) label {
+  color: #ed8796;
+  margin: 0px 8px;
 }
 
-#workspaces button.urgent {
-    border-color: #c9545d;
-    color: #c9545d;
+#workspaces button:nth-child(3) label {
+  color: #a6da95;
+  margin: 0px 8px;
+}
+
+#workspaces button:nth-child(4) label {
+  color: #c6a0f6;
+  margin: 0px 8px;
+}
+
+#workspaces button:nth-child(5) label {
+  color: #f4dbd6;
+  margin: 0px 8px;
+}
+
+#workspaces button:nth-child(6) label {
+  color: #f5a97f;
+  margin: 0px 8px;
 }
 
 #custom-power {
