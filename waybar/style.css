@@ -95,7 +95,7 @@ window#waybar {
 }
 
 #cpu {
-    color: #f7768e;
+    color: #538bad;
 }
 
 #cpu.warning {
@@ -110,7 +110,7 @@ window#waybar {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    color: #f7768e;
+    color: #538bad;
 }
 
 #memory.warning {
