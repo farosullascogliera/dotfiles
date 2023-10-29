@@ -2,6 +2,7 @@
 
 - **OS**                - Arch Linux
 - **Window Manager/DE** - hyprland
+- **Display Manager**   - SDDM
 - **Browser**           - firefox-developer-edition
 - **Terminal**          - kitty
 - **Shell**             - zsh
