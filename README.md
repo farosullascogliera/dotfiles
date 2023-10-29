@@ -1,5 +1,5 @@
 # dotfiles
-##Test
+
 - **OS**                - Arch Linux
 - **Window Manager/DE** - hyprland
 - **Display Manager**   - SDDM
