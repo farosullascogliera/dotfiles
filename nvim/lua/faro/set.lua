@@ -12,9 +12,5 @@ vo.termguicolors = true
 
 vo.scrolloff = 8
 
-vim.api.nvim_command("autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2")
-vim.api.nvim_command("autocmd FileType typescript setlocal shiftwidth=2 tabstop=2 softtabstop=2")
-vim.api.nvim_command("autocmd FileType typescriptreact setlocal shiftwidth=2 tabstop=2 softtabstop=2")
-vim.api.nvim_command("autocmd FileType javascriptreact setlocal shiftwidth=2 tabstop=2 softtabstop=2")
-vim.api.nvim_command("autocmd FileType * setlocal shiftwidth=4 tabstop=4 softtabstop=4")
-
+vo.ignorecase = true
+vo.smartcase = true
