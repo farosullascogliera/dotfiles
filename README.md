@@ -10,4 +10,4 @@
 - **Text Editor**       - neovim
 - **Top Bar**           - waybar
 - **Launcher**          - wofi
-- **Font**              - Fira Code Nerd Font
+- **Font**              - JetBrains Mono Nerd Font
