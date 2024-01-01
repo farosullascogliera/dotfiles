@@ -14,3 +14,7 @@ vo.scrolloff = 8
 
 vo.ignorecase = true
 vo.smartcase = true
+
+vo.cc = "80"
+
+

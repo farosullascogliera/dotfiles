@@ -29,3 +29,30 @@ cmp.setup({
         ['<C-b>'] = cmp_action.luasnip_jump_backward(),
     }
 })
+
+vim.diagnostic.config({
+    virtual_text = false,
+    signs = true,
+    underline = true,
+    update_in_insert = false,
+    severity_sort = true
+})
+
+-- Show line diagnostics automatically in hover window
+vim.o.updatetime = 250
+vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+  group = vim.api.nvim_create_augroup("float_diagnostic", { clear = true }),
+  callback = function ()
+    vim.diagnostic.open_float(nil, {focus=false})
+  end
+})
+
+-- Highlight line number instead of having icons in sign column
+for _, diag in ipairs({ "Error", "Warn", "Info", "Hint" }) do
+    vim.fn.sign_define("DiagnosticSign" .. diag, {
+        text = "",
+        texthl = "DiagnosticSign" .. diag,
+        linehl = "",
+        numhl = "DiagnosticSign" .. diag,
+    })
+end
